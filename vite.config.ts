@@ -72,6 +72,15 @@ export default defineConfig((config) => {
         },
       },
     },
+    // 🚩 Add this section for Railway public URLs
+    server: {
+      allowedHosts: [
+        "localhost",
+        "boltdiy-production-3988.up.railway.app",
+        "endearing-charisma-production-520f.up.railway.app"
+      ],
+      host: true
+    },
     test: {
       exclude: [
         '**/node_modules/**',
